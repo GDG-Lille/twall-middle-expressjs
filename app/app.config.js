@@ -12,12 +12,7 @@
             "consumer": {
                 "key": "XXX",
                 "secret": "XXX"
-            },
-            "access": {
-                "token": "XXX",
-                "secret": "XXX"
-            },
-            "callBackUrl": "XXX"
+            }
         }
     }
 

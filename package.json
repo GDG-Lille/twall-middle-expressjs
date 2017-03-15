@@ -1,0 +1,25 @@
+{
+  "name": "twall-middle",
+  "version": "1.0.0",
+  "description": "MIDDLE - Live wall of tweets",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgruchala/twall-middle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fgruchala/twall-middle/issues"
+  },
+  "homepage": "https://github.com/fgruchala/twall-middle#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "moment": "^2.17.1",
+    "twitter-node-client": "0.0.6",
+    "winston": "^2.3.1"
+  }
+}

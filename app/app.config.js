@@ -3,10 +3,15 @@
 
     const properties = {
         "server": {
-            "port": "3000"
+            "port": "3002",
+            "allow": {
+                "origin": "http://localhost:3000",
+                "headers": "Origin"
+            }
         },
         "log": {
-            "level": "info"
+            "level": "info",
+            "filename": "./log/stdout.log"
         },
         "twitter": {
             "consumer": {

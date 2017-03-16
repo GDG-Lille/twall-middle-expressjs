@@ -11,10 +11,15 @@
     winston.add(
         winston.transports.File, 
         { 
-            filename: "./log/stdout.log",
+            filename: config.log.filename,
             json: false 
         });
 
+    app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", config.server.allow.origin);
+        res.header("Access-Control-Allow-Headers", config.server.allow.headers);
+        next();
+    });
     app.use("/api/tweet", tweetWS);
     app.use(function(err, req, res, next) {
         res.status(err.status).json(err.data);

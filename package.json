@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/fgruchala/twall-middle.git"
   },
-  "author": "",
+  "author": "François GRUCHALA <@FGruchala>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fgruchala/twall-middle/issues"

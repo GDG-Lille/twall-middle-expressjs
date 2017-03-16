@@ -14,17 +14,18 @@
             tweetConverted.created_at = tweetToConvert.created_at;
             tweetConverted.id = tweetToConvert.id;
             tweetConverted.text = tweetToConvert.text;
+            tweetConverted.retweet_count = tweetToConvert.retweet_count;
             
             let user = {};
             user.screen_name = tweetToConvert.user.screen_name;
             tweetConverted.user = user;
 
-            if(tweetToConvert.entities.media != undefined) {
-                let entities = {};
+            if(tweetToConvert.extended_entities != undefined && tweetToConvert.extended_entities.media != undefined) {
+                let extendedEntities = {};
                 let media = {};
-                media.media_url_https = tweetToConvert.entities.media[0].media_url_https;
-                entities.media = [media];
-                tweetConverted.entities = entities;
+                media.media_url_https = tweetToConvert.extended_entities.media[0].media_url_https;
+                extendedEntities.media = [media];
+                tweetConverted.extended_entities = extendedEntities;
             }
 
             winston.debug("[tweet.converter] Tweet converted", tweetConverted);

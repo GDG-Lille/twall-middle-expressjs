@@ -20,14 +20,6 @@
             user.screen_name = tweetToConvert.user.screen_name;
             tweetConverted.user = user;
 
-            if(tweetToConvert.extended_entities != undefined && tweetToConvert.extended_entities.media != undefined) {
-                let extendedEntities = {};
-                let media = {};
-                media.media_url_https = tweetToConvert.extended_entities.media[0].media_url_https;
-                extendedEntities.media = [media];
-                tweetConverted.extended_entities = extendedEntities;
-            }
-
             winston.debug("[tweet.converter] Tweet converted", tweetConverted);
             return tweetConverted;
         });

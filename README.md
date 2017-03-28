@@ -24,7 +24,7 @@ Go to https://apps.twitter.com/ and generate them.
 2. Launch by `<WORKING_DIR>$ npm run server`
 
 ## Contact
-### Via GitHub > [Issues](https://github.com/fgruchala/twall-middle/issues)
+### Via GitHub > [Issues](https://github.com/fgruchala/twall-middle-expressjs/issues)
 Helpful for **question**, **bug** and **contribution request**.
 
 ### Via Twitter > François GRUCHALA [@FGruchala](https://twitter.com/FGruchala)

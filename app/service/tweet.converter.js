@@ -15,7 +15,6 @@
             tweetConverted.text = tweetToConvert.text;
             tweetConverted.createdAt = tweetToConvert.created_at;
             tweetConverted.retweetCount = tweetToConvert.retweet_count;
-            tweetConverted.replyCount = tweetToConvert.reply_count;
             tweetConverted.favoriteCount = tweetToConvert.favorite_count;
             
             let user = {};

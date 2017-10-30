@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/fgruchala/twall-middle#readme",
   "dependencies": {
+    "compression": "^1.7.1",
     "express": "^4.16.2",
     "moment": "^2.19.1",
     "twitter-node-client": "0.0.6",

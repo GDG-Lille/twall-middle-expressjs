@@ -4,6 +4,7 @@
     const config = require("./app.config");
     const winston = require("winston");
     const express = require("express");
+    const compression = require('compression');
     const app = express();
     const tweetWS = require("./webservice/tweet.ws");
 
@@ -15,6 +16,7 @@
             json: false 
         });
 
+    app.use(compression());
     app.use(function(req, res, next) {
         res.header("Access-Control-Allow-Origin", config.server.allow.origin);
         res.header("Access-Control-Allow-Headers", config.server.allow.headers);
